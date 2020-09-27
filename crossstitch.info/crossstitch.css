@@ -1,0 +1,27 @@
+table {
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: 80%;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    max-width: 200px;
+}
+
+td {
+    width: 33%;
+    vertical-align: top;
+}
+
+#menu {
+    background-color: #c0c0c0;
+}
+
+th {
+    width: 33%;
+    background-color: #c0c0c0;
+}
