@@ -30,7 +30,7 @@ for my $image (
         $link = "<a href='$pdf'>(pdf)</a>";
     }
     my $div =
-"<div class='entry'><p>$name $link</p><img src='$image' alt='$name' /></a></div>";
+"<div class='entry'><p>$name $link</p><img src='$image' alt='$name' /></div>";
     $entries = $entries . "\n" . $div;
 }
 
