@@ -52,30 +52,3 @@ img
     padding: 50px 50px 50px 50px;
     clear: both;
 }
-
-table {
-  border-collapse: collapse;
-  width: 100%;
-  border: 1px solid black;
-}
-
-th, td {
-  text-align: left;
-  padding: 8px;
-  border: 1px solid black;
-}
-
-tr:nth-child(even){background-color: #f2f2f2}
-
-th {
-  background-color: #b3cccc;
-  color: black;
-}
-
-.table-prop {
-    width: 33%;
-}
-
-.table-val {
-    width: 100%;
-}
