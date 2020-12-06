@@ -45,4 +45,4 @@ open( my $OUT, ">", "${target}index.html" );
 print $OUT $output;
 system("cp $definitions/main.css $target");
 system("cp -r $resources ${target}resources");
-system("rsync -arcv $target $webserver");
+system("rsync -arcv --delete-after $target $webserver");
