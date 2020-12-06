@@ -40,7 +40,10 @@ while (<$INDEX>) {
     $output = $output . "$_";
 }
 
+my $date = `date +%Y-%m-%d`;
+chomp $date;
 $output =~ s/{CONTENT}/$entries/g;
+$output =~ s/{DATE}/$date/g;
 open( my $OUT, ">", "${target}index.html" );
 print $OUT $output;
 system("cp $definitions/main.css $target");
