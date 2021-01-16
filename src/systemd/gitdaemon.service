@@ -1,0 +1,12 @@
+[Unit]
+Description=Start Git Daemon
+
+[Service]
+ExecStart=/usr/bin/gitdaemon
+Restart=always
+RestartSec=500ms
+User=git
+Group=git
+
+[Install]
+WantedBy=multi-user.target
