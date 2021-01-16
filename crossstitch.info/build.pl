@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use autodie;
 
-my $definitions = "/opt/sites/crossstitch.info/";
+my $definitions = "/opt/whoami/crossstitch.info/";
 my $webserver   = "/webserver/crossstitch/";
 my $resources   = $definitions . "resources/";
 my $content     = "";
