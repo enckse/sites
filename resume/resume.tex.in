@@ -1,3 +1,6 @@
+define(TODAY,   )dnl
+define(ADDRESS, )dnl
+define(PHONE,   )dnl
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Deedy - One Page Two Column Resume
 % LaTeX Template
@@ -22,8 +25,8 @@
 
 \namesection{Sean}{Enck}{%
   \href{mailto:seanenck@gmail.com}{seanenck@gmail.com}
-  | {PHONE}
-  | {ADDRESS}%
+  | PHONE
+  | ADDRESS%
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -211,6 +214,6 @@ Corporate Performance Management:
 \end{minipage}
 
 \small{}
-Prepared: {DATE}
+Prepared: TODAY
 
 \end{document}  \documentclass[]{article}
