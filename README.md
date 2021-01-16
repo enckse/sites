@@ -1,4 +1,4 @@
-sites
+whoami
 ===
 
-Personal website content/configurations
+Personal website content/configurations and general info
