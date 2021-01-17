@@ -1,7 +1,7 @@
 DESTDIR :=
 SYSTEMD := $(DESTDIR)/usr/lib/systemd/system/
 USRBIN  := $(DESTDIR)/usr/bin/
-SRC     := src/
+SRC     :=
 UNITS   := $(SRC)systemd/
 
 install:
