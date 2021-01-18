@@ -13,15 +13,17 @@ system("rm -rf $target");
 system("mkdir -p $target");
 
 my @pages;
-my $page = 1;
-my $count = 0;
+my $page    = 1;
+my $count   = 0;
 my $entries = "";
-for my $dir ( `ls $resources | sort -r` ) {
+for my $dir (`ls $resources | sort -r`) {
     chomp $dir;
     if ( !$dir ) {
         next;
     }
-    for my $image (`find $resources$dir -type f -print | sort  | grep -v "\.pdf"`) { 
+    for
+      my $image (`find $resources$dir -type f -print | sort  | grep -v "\.pdf"`)
+    {
         chomp $image;
         $image =~ s#$definitions##g;
         my $generic = `echo $image | cut -d '.' -f 1`;
@@ -35,7 +37,7 @@ for my $dir ( `ls $resources | sort -r` ) {
             $link = "<a href='$pdf'>(pdf)</a>";
         }
         my $div =
-    "<div class='entry'><p>$name ($dir) $link</p><a href='$image'><img src='$image' loading='lazy' alt='$name' /></a></div>";
+"<div class='entry'><p>$name ($dir) $link</p><a href='$image'><img src='$image' loading='lazy' alt='$name' /></a></div>";
         $entries = $entries . "\n" . $div;
         if ( $count > 50 ) {
             push @pages, $entries;
@@ -56,10 +58,10 @@ my $idx = 0;
 my @links;
 for my $file (@pages) {
     my $file_name = "page$idx";
-    my $disp = $file_name;
+    my $disp      = $file_name;
     if ( $idx == 0 ) {
         $file_name = "index";
-        $disp = "home";
+        $disp      = "home";
     }
     $idx += 1;
     $page_files{$file_name} = $file;
@@ -73,14 +75,14 @@ while (<$INDEX>) {
 }
 
 my $date = `date +%Y-%m-%d`;
-for my $file (keys %page_files) {
+for my $file ( keys %page_files ) {
     chomp $date;
     my $show = "detail-hide";
     if ( $file =~ m/index/ ) {
         $show = "detail-show";
     }
     my $entries = $page_files{$file};
-    my $map = join("\n", @links);
+    my $map     = join( "\n", @links );
     $map = `echo '$map' | grep -v $file`;
     my $tmpl = $output;
     $tmpl =~ s/{CONTENT}/$entries/g;
