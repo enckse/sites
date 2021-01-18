@@ -13,14 +13,17 @@ system("rm -rf $target");
 system("mkdir -p $target");
 
 my @pages;
-my $page    = 1;
-my $count   = 0;
 my $entries = "";
 for my $dir (`ls $resources | sort -r`) {
     chomp $dir;
     if ( !$dir ) {
         next;
     }
+    if ($entries) {
+        push @pages, $entries;
+        $entries = "";
+    }
+    $entries = "\n<div class='entry'><p></p><u><b><i>$dir</i></b></u></div>";
     for
       my $image (`find $resources$dir -type f -print | sort  | grep -v "\.pdf"`)
     {
@@ -37,15 +40,8 @@ for my $dir (`ls $resources | sort -r`) {
             $link = "<a href='$pdf'>(pdf)</a>";
         }
         my $div =
-"<div class='entry'><p>$name ($dir) $link</p><a href='$image'><img src='$image' loading='lazy' alt='$name' /></a></div>";
+"<div class='entry'><p>$name $link</p><a href='$image'><img src='$image' loading='lazy' alt='$name' /></a></div>";
         $entries = $entries . "\n" . $div;
-        if ( $count > 50 ) {
-            push @pages, $entries;
-            $entries = "";
-            $page += 1;
-            $count = -1;
-        }
-        $count += 1;
     }
 }
 
