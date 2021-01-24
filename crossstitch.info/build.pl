@@ -14,11 +14,13 @@ system("mkdir -p $target");
 
 my @pages;
 my $entries = "";
+my @index;
 for my $dir (`ls $resources | sort -r`) {
     chomp $dir;
     if ( !$dir ) {
         next;
     }
+    push @index, $dir;
     if ($entries) {
         push @pages, $entries;
         $entries = "";
@@ -53,7 +55,7 @@ my %page_files;
 my $idx = 0;
 my @links;
 for my $file (@pages) {
-    my $file_name = "page$idx";
+    my $file_name = "$index[$idx]";
     my $disp      = $file_name;
     if ( $idx == 0 ) {
         $file_name = "index";
