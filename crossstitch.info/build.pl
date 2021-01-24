@@ -59,8 +59,8 @@ for my $file (@pages) {
     my $disp      = $file_name;
     if ( $idx == 0 ) {
         $file_name = "index";
-        $disp      = "home";
     }
+
     $idx += 1;
     $page_files{$file_name} = $file;
     push @links, "<a href='$file_name.html'>$disp</a>";
