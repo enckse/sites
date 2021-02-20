@@ -17,7 +17,6 @@ while [ 1 -eq 1 ] ; do
     echo "regenerate sites"
     mv $CACHE $PREV
     rsync -avc $STORE/voidedtech.com/ /webserver/main --delete-after
-    ln -s /opt/external/ /webserver/main/binaries
     cd $STORE/crossstitch.info
     perl build.pl
 done
