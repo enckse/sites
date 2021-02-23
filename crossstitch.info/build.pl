@@ -3,8 +3,11 @@ use strict;
 use warnings;
 use autodie;
 
-my $definitions = "/opt/whoami/crossstitch.info/";
-my $webserver   = "/webserver/crossstitch/";
+die "arguments src dst required" if !@ARGV;
+
+my $definitions = shift @ARGV or die "no src";
+my $pkgdir      = shift @ARGV or die "no dst";
+my $webserver   = "$pkgdir/webserver/crossstitch/";
 my $resources   = $definitions . "resources/";
 my $content     = "";
 my $target      = "${definitions}bin/";

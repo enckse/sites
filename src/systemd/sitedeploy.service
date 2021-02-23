@@ -1,9 +1,0 @@
-[Unit]
-Description=Auto-run and deploy sites
-
-[Service]
-ExecStart=/usr/bin/sitedeploy
-Restart=always
-
-[Install]
-WantedBy=multi-user.target
