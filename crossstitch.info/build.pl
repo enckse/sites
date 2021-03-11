@@ -42,11 +42,7 @@ for my $dir (`ls $resources | sort -r`) {
         my $name = `basename $generic`;
         chomp $name;
         my $pdf  = $generic . ".pdf";
-        my $link = "(pattern unavailable)";
-
-        if ( -e "$resources$pdf" ) {
-            $link = "<a href='$pdf'>(pdf)</a>";
-        }
+        my $link = "<a href='$pdf'>(pdf)</a>";
         my $div =
 "<div class='entry'><p>$name $link</p><a href='$image'><img src='$image' loading='lazy' alt='$name' /></a></div>";
         $div =~ s#$resources#resources/#g;
