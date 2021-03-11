@@ -11,6 +11,7 @@ my $target      = shift @ARGV or die "no target";
 my $content     = "";
 chomp(my $definitions = `pwd`);
 
+$resources   = "$resources/";
 $webserver   = "$webserver/crossstitch/";
 system("rm -rf $target");
 system("mkdir -p $target");
