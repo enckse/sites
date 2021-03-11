@@ -9,6 +9,7 @@ my $resources   = shift @ARGV or die "no resources";
 my $webserver   = shift @ARGV or die "no webroot";
 my $target      = shift @ARGV or die "no target";
 my $content     = "";
+chomp(my $definitions = `pwd`);
 
 $webserver   = "$webserver/crossstitch/";
 system("rm -rf $target");
