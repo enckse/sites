@@ -96,6 +96,7 @@ for my $file ( keys %page_files ) {
     print $OUT $tmpl;
 }
 
+system("ls $target");
 system("cp $definitions/main.css $target");
 system("cp -r $resources ${target}resources");
 system("rsync -arcv --delete-after $target $webserver");
