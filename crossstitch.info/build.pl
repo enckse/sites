@@ -3,15 +3,14 @@ use strict;
 use warnings;
 use autodie;
 
-die "arguments src dst required" if !@ARGV;
+die "arguments [resources webroot cache] required" if !@ARGV;
 
-my $definitions = shift @ARGV or die "no src";
-my $pkgdir      = shift @ARGV or die "no dst";
-my $webserver   = "$pkgdir/webserver/crossstitch/";
-my $resources   = $definitions . "resources/";
+my $resources   = shift @ARGV or die "no resources";
+my $webserver   = shift @ARGV or die "no webroot";
+my $target      = shift @ARGV or die "no target";
 my $content     = "";
-my $target      = "${definitions}bin/";
 
+$webserver   = "$webserver/crossstitch/";
 system("rm -rf $target");
 system("mkdir -p $target");
 
