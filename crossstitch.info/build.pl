@@ -44,7 +44,7 @@ for my $dir (`ls $resources | sort -r`) {
         my $pdf  = $generic . ".pdf";
         my $link = "(pattern unavailable)";
 
-        if ( -e "$definitions$pdf" ) {
+        if ( -e "$resources$pdf" ) {
             $link = "<a href='$pdf'>(pdf)</a>";
         }
         my $div =
