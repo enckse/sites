@@ -49,6 +49,7 @@ for my $dir (`ls $resources | sort -r`) {
         }
         my $div =
 "<div class='entry'><p>$name $link</p><a href='$image'><img src='$image' loading='lazy' alt='$name' /></a></div>";
+        $div =~ s#$resources#resources#g;
         $entries = $entries . "\n" . $div;
     }
 }
