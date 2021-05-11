@@ -82,6 +82,7 @@ Website:  \href{https://enck.network}{\custombold{enck.network}} \\
 \textbullet{} Bash \\
 \textbullet{} C\# (.NET) \\
 \textbullet{} Go \\
+\textbullet{} Perl \\
 \textbullet{} Python \\
 \location{Knowledgeable:}
 \textbullet{} C++ \\
@@ -89,7 +90,6 @@ Website:  \href{https://enck.network}{\custombold{enck.network}} \\
 \textbullet{} JavaScript \\
 \textbullet{} PowerShell \\
 \textbullet{} Rust \\
-\textbullet{} XML
 \sectionsep
 
 \subsection{Source Control}
