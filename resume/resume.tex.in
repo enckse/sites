@@ -79,7 +79,6 @@ Website:  \href{https://enck.network}{\custombold{enck.network}} \\
 \textbullet{} Bash \\
 \textbullet{} C\# (.NET) \\
 \textbullet{} Go \\
-\textbullet{} PowerShell \\
 \textbullet{} Python \\
 \location{Knowledgeable:}
 \textbullet{} C \\
@@ -88,6 +87,7 @@ Website:  \href{https://enck.network}{\custombold{enck.network}} \\
 \textbullet{} HTML \\
 \textbullet{} JavaScript \\
 \textbullet{} JSON \\
+\textbullet{} PowerShell \\
 \textbullet{} Rust \\
 \textbullet{} XML
 \sectionsep
@@ -101,11 +101,11 @@ Website:  \href{https://enck.network}{\custombold{enck.network}} \\
 
 \subsection{Technologies}
 \textbullet{} Build Systems (CMake, make) \\
-\textbullet{} Gitea \\
+\textbullet{} Collaboration (Gitlab, Phabricator) \\
+\textbullet{} Gitlab \\
 \textbullet{} Jenkins \\
 \textbullet{} JIRA \\
 \textbullet{} Networking (802.1X, Ubiquiti) \\
-\textbullet{} Phabricator
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
