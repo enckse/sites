@@ -54,9 +54,11 @@ Website:  \href{https://enck.network}{\custombold{enck.network}} \\
 \section{Skills}
 
 \subsection{Containers/VMs}
+\textbullet{} Docker \\
 \textbullet{} Hyper-V \\
 \textbullet{} KVM \\
 \textbullet{} LXC \\
+\textbullet{} podman \\
 \textbullet{} systemd-nspawn \\
 \textbullet{} VMware ESXi
 \sectionsep
@@ -70,6 +72,7 @@ Website:  \href{https://enck.network}{\custombold{enck.network}} \\
 \subsection{Environments}
 \textbullet{} Arch \\ 
 \textbullet{} Debian \\
+\textbullet{} macOS (11) \\
 \textbullet{} Windows (7 to 10) \\
 \textbullet{} Windows Server (2008 to 2012 R2)
 \sectionsep
@@ -154,6 +157,7 @@ Virtual Experimentation Environments:
 \begin{tightemize}
 \item Developed software solutions to collect data for analysis
 \item Built a solution to provide surveying abilities for experiment participants
+\item Lead implementation of simulation software using the Unreal Engine
 \end{tightemize}
 \sectionsep
 
@@ -207,7 +211,6 @@ Corporate Performance Management:
 \begin{tightemize}
 \item Concentration: System \& Data Security
 \item Coop Employment: Software Validation Engineer at Omron Automotive
-\item Undergraduate Thesis: Test Automation
 \end{tightemize}
 \sectionsep
 
