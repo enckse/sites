@@ -5,7 +5,7 @@ PHONE   :=
 TODAY   := $(shell date +%Y-%m-%d)
 PDF     := $(BIN)resume.pdf
 TEX     := resume.tex.in
-DEPS    := apt install texlive-latex-recommended texlive-xetex
+DEPS    := apk add texlive-xetex texlive-full
 
 all: $(PDF)
 
