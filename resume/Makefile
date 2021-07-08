@@ -5,7 +5,7 @@ PHONE   :=
 TODAY   := $(shell date +%Y-%m-%d)
 PDF     := $(BIN)resume.pdf
 TEX     := resume.tex.in
-DEPS    := apk add texlive-xetex texlive-full
+DEPS    := apk add m4 texlive-xetex texlive-full
 
 all: $(PDF)
 
