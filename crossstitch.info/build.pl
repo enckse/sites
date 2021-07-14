@@ -13,7 +13,7 @@ chomp(my $definitions = `pwd`);
 
 $target      = "$target/";
 $definitions = "$definitions/";
-$resources   = "$resources/crossstitch.info/";
+$resources   = "$resources/crossstitch/";
 $webserver   = "$webserver/crossstitch/";
 system("rm -rf $target");
 system("mkdir -p $target");
